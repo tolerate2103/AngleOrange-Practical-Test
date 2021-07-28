@@ -1,0 +1,126 @@
+/*This is for declaring all our global variables. Import this file into other style sheets if needed*/
+
+/*GENERAL*/
+$font-family: Roboto,"Helvetica Neue",sans-serif;
+$font-weight: 400;
+$font-size: 14px;
+/*$font-weight: 600;
+$font-size: 15px;*/
+
+$top-bar-height: 0px;
+
+$color-primary: #033038;
+
+// Light Shades
+$color-primary-light-1: #0062A3;
+$color-primary-light-2: #006EB8;
+$color-primary-light-3: #007ACC;
+$color-primary-light-4: #0087E0;
+
+// Dark Shades
+$color-primary-dark-1: #00497A;
+$color-primary-dark-2: #003D66;
+$color-primary-dark-3: #003D66;
+$color-primary-dark-4: #003152;
+
+
+/*$color-primary: #14234b;*/
+/*$color-primary: #404041;*/
+$color-primary-border: #14234b;
+$color-secondary: #d34626;
+$color-secondary-border: #d34626;
+$color-tertiary: #2376bc;
+$color-tertiary-border: #2376bc;
+$color-gray: #404041;
+$color-silver: #7a8b99;
+$color-white: #fff;
+
+$color-velocity-blue: #65beec;
+
+$off-white: #f7f7f7;
+$off-white-border: #ebebeb;
+$blue: #2376bc;
+$orange: #e6861d;
+$green: #56a84d;
+$gray: #646464;
+$red: #b71515;
+$mustard-yellow: #fca311;
+
+/*TABLES*/
+$table-list-th-bgcolor: #033038;
+$table-list-th-fgcolor: #ffffff;
+$table-list-tr-hover: rgba(35, 118, 188, 0.10);
+$table-list-tr-active: rgba(35, 118, 188, 0.56);
+$webkit-scrollbar-colour: #F5F5F5;
+
+/*SIDEBAR*/
+$sidebar-header-font-size: 15px;
+$sidebar-header-font-weight: 600;
+$sidebar-header-font-colour: white;
+$sidebar-width: 250px;
+$sidebar-border: 1px solid rgba(255, 255, 255, 0.1);
+$sidebar-font-size: 14px;
+$sidebar-font-weight: 400;
+$sidebar-font-weight-active: 400;
+$sidebar-font-submenu-size: 12px;
+$sidebar-font-submenu-weight: 500;
+$sidebar-left-padding: 20px;
+$sidebar-bgcolor: #033038;
+$sidebar-bgcolor-active: #033038;
+$sidebar-bgcolor-hover: rgba(35, 118, 188, 0.54);
+$sidebar-fgcolor: #d3d3d3;
+$sidebar-fgcolor-active: #ffffff;
+$sidebar-icon-width: 35px;
+$sidebar-icon-font-weight: 400;
+/*$sidebar-width: 250px;
+$sidebar-border: 1px solid rgba(255, 255, 255, 0.1);
+$sidebar-font-size: 16px;
+$sidebar-font-weight: 600;
+$sidebar-font-weight-active: 800;
+$sidebar-font-submenu-size: 14px;
+$sidebar-font-submenu-weight: 500;
+$sidebar-left-padding: 20px;
+$sidebar-bgcolor: #2376bc;
+$sidebar-bgcolor-active: #2376bc;
+$sidebar-bgcolor-hover: #2376bc;
+$sidebar-fgcolor: #d3d3d3;
+$sidebar-fgcolor-active: #ffffff;
+$sidebar-icon-width: 35px;
+$sidebar-icon-font-weight: 400;*/
+
+/*NAVBAR*/
+$nav-height: 60px;
+$nav-bgcolor: #005288;
+$nav-fgcolor: #ffffff;
+$nav-text-weight: 600;
+/*$nav-height: 50px;
+$nav-bgcolor: #14234b;*/
+/*$nav-bgcolor: #404041;*/
+/*$nav-fgcolor: #ffffff;
+$nav-text-weight: 600;
+$content-height: calc(100vh - 50px);*/
+
+/*CONTENT*/
+$content-height: calc(100vh - 50px);
+
+/*Buttons*/
+$color-btn-grey: #ebebeb;
+$btn-back-border: #0f213e;
+$btn-action-border: #2d6fa8;
+
+/*Styles*/
+$btn-sort-bg-color: #1b6ec2;
+$default-blue-bg: #337ab7;
+$sahiv-default-green: #016273;
+$stat-color: #fff;
+$rbox-borders: solid 5px #D8DCE3;
+$forms-default-bg-color: #F5F5F5;
+$default-webkit-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+$edit-border-colour: #dee2e6;
+
+/*Checkmark*/
+$checkmark-transform: rotate(45deg);
+
+/*Slide Toggle*/
+$slide-toggle-bg: #337ab7;
+$slide-toggle-bar-bg: rgba(51, 122, 183,.54);

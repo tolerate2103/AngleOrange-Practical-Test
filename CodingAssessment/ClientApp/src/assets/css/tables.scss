@@ -1,0 +1,70 @@
+@import "_utilities.scss";
+
+.list-table {
+  font-family: $font-family;
+  font-size: $font-size;
+}
+
+/*=============================================
+    List Table 1
+==============================================*/
+.rs-list-table {
+  width: 100%;
+}
+
+.rs-list-table .selected, .rs-list-table .selected a:link, .rs-list-table .selected a:visited {
+  color: #fff !important;
+  background-color: #1D65A6 !important;
+  border-color: #2d6fa8 !important;
+  text-decoration: none;
+}
+
+.rs-list-table td {
+  padding: 5px;
+}
+
+.rs-list-table-sm {
+  font-size: 11px;
+}
+
+.rs-list-table th {
+  padding: 3px;
+  height: 30px;
+  font-weight: normal;
+  font-size: 13px;
+}
+
+.rs-list-table tbody tr:hover {
+  background-color: #f5f5f5;
+}
+
+.rs-list-table tbody tr {
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.rs-list-table-active {
+  background-color: #ff6a00;
+  color: #fff !important;
+}
+
+.rs-list-table thead {
+  background-color: #be6221 ;
+  color: $off-white !important;
+  /*width: calc( 100% - 1em );*/
+}
+
+
+.rs-list-table-filter {
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #dddddd;
+}
+
+.table-condensed thead {
+  background-color: #ffffff !important;
+  color: gray !important;
+  font-size: inherit !important;
+}
+
+
+
+

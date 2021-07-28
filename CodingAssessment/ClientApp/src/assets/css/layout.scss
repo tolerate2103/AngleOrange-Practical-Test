@@ -1,0 +1,690 @@
+@import "_utilities.scss";
+
+.main-margin {
+  margin-left: 200px !important;
+}
+
+
+
+
+.main-margin-none {
+  margin-left: 0px !important;
+}
+
+
+
+// ==================================================
+// SIDEBAR
+// ==================================================
+
+#sidebar {
+  /*  min-width: $sidebar-width;
+  max-width: $sidebar-width;
+*/
+  min-width: 220px;
+  max-width: 220px;
+  background: $color-primary;
+  color: $sidebar-fgcolor;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+  position: relative;
+}
+
+.notification-icon {
+  font-size: 24px;
+  padding: 0;
+}
+
+.notification-icon i {
+  font-size: 24px;
+}
+
+.notification-icon span {
+  font-size: 24px;
+}
+
+.sidebar-second-menu .nav-link.active {
+  background-color: #6e0d25 !important;
+  color: #fff !important;
+  border-left: solid 5px #6e0d25;
+}
+
+.sidebar-second-menu .nav-link.active, .sidebar-second-menu .nav-link.active > a:hover {
+  border-left: solid 5px #6e0d25 !important;
+}
+
+
+.sidebar-second-menu .nav-link:not(.active) {
+  /*border-left: solid 5px $color-primary;*/
+}
+
+.sidebar-second-menu {
+  text-decoration: none;
+  /*transition: .2s all ease;*/
+  font-family: $font-family;
+  font-size: $sidebar-font-size;
+  font-weight: $sidebar-font-weight;
+  color: $sidebar-fgcolor;
+}
+
+.sidebar-main-menu {
+  text-decoration: none;
+  /*transition: .2s all ease;*/
+  font-family: $font-family;
+  font-size: $sidebar-font-size;
+  font-weight: $sidebar-font-weight;
+  color: $sidebar-fgcolor;
+}
+
+.sidebar-main-menu:hover {
+  text-decoration: none;
+}
+
+#sidebar ul li a {
+  padding: 8px 20px;
+  display: block;
+  color: $sidebar-fgcolor;
+  border-bottom: $sidebar-border;
+  position: relative;
+}
+
+.sidebar-border-bottom {
+  border-bottom: $sidebar-border;
+}
+
+#sidebar ul li a:hover {
+  color: $sidebar-fgcolor-active;
+  background: $sidebar-bgcolor-hover;
+  border-bottom: $sidebar-border;
+}
+
+
+#sidebar ul li.active > a {
+  background: $sidebar-bgcolor-active;
+  color: $sidebar-fgcolor-active;
+}
+
+.sidebar-logo {
+  background-color: $color-primary;
+  border-bottom: $sidebar-border;
+  height: 60px;
+  font-size: 20px; //temp because a logo will go here
+  font-weight: 700; //temp because a logo will go here
+  color: #ffffff; //temp because a logo will go here
+  padding-left: $sidebar-left-padding;
+  /*border-bottom: $nav-border-height solid $nav-border-color;*/
+}
+
+.sidebar-logo img {
+  max-width: 150px !important;
+  margin: 0;
+}
+
+.sidebar-chevron {
+  position: absolute;
+  top: 8px;
+  left: 180px;
+}
+
+.header-active {
+  font-weight: 500;
+  background-color: $color-primary-dark-2;
+}
+
+.sidebar-second-menu {
+  padding-left: 0px;
+}
+
+.sidebar-second-menu-active {
+  background-color: $color-secondary !important;
+  font-weight: $sidebar-font-weight-active !important;
+  color: $sidebar-fgcolor-active !important;
+}
+
+.sidebar-second-menu a {
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+  border-bottom: none !important;
+  font-size: $sidebar-font-submenu-size !important;
+  font-weight: $sidebar-font-submenu-weight !important;
+  color: $sidebar-fgcolor !important;
+
+}
+
+.sidebar-second-menu i {
+  width: $sidebar-icon-width !important;
+  text-align: center !important;
+  font-weight: $sidebar-icon-font-weight !important;
+}
+
+.sidebar-children {
+  -webkit-transition: all 1s linear !important;
+  -moz-transition: all 1s linear !important;
+  -o-transition: all 1s linear !important;
+  transition: all 1s linear !important;
+  display: block;
+}
+
+.sidebar-children-collapse {
+  -webkit-transition: all 1s linear !important;
+  -moz-transition: all 1s linear !important;
+  -o-transition: all 1s linear !important;
+  transition: all 1s linear !important;
+  display: none;
+}
+
+.top-bar {
+  height: $nav-height;
+  background-color: $nav-bgcolor;
+  -webkit-box-shadow: 0px 1px 3px 0px rgba(196,196,196,0.66);
+  -moz-box-shadow: 0px 1px 3px 0px rgba(196,196,196,0.66);
+  box-shadow: 0px 1px 3px 0px rgba(196,196,196,0.66);
+  color: $nav-fgcolor;
+  font-weight: $nav-text-weight;
+}
+
+.top-bar input {
+  display: block;
+  width: 100%;
+  height: 28px;
+  padding: 0.375rem 0.75rem;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.top-bar input:focus {
+  outline: none;
+}
+
+.top-bar-dropdown {
+  cursor: pointer;
+}
+
+//=================================================
+// Page Header
+//=================================================
+
+.notification-icon-table {
+  width: 100%;
+}
+
+.notification-icon-table td {
+  text-align: center;
+}
+
+.page-header {
+  height: 60px;
+  width: 100%;
+  clear: both;
+  background-color: $color-white;
+  border-bottom: solid 1px #e4e4e4;
+  border-top: none;
+
+  margin-top: 0px;
+}
+
+//=================================================
+/*
+ * Content
+ */
+[role="main"] {
+  padding-top: 133px;
+}
+
+@media (min-width: 768px) {
+  [role="main"] {
+    padding-top: 48px;
+  }
+}
+
+@media (min-width: 300px) {
+  [role="main"] {
+    padding-top: 48px;
+  }
+}
+
+.driverisk-logo {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  font-size: 1rem;
+  background-color: rgba(0, 0, 0, .25);
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
+  color: #fff;
+}
+
+.content-height {
+  height: calc(100vh - 120px) !important;
+  overflow: auto;
+  overflow-x: hidden;
+  /*overflow-y: hidden;*/
+}
+
+/*=============================================
+    Nav Header
+==============================================*/
+.nav-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: $nav-height;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $nav-bgcolor;
+  /*background-color: #232e40;*/
+  padding: 0 15px 0 0;
+  z-index: 1000;
+  color: #f3f3f3;
+}
+
+.nav-header-left {
+  display: flex;
+  align-items: center;
+}
+
+.nav-header-right {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.profile-links {
+  color: white !important;
+  text-decoration: none !important;
+}
+
+
+.search-bar-right {
+  display: flex;
+  align-items: flex-end;
+}
+
+
+
+.dr-badge {
+  background-color: #f1f1f1;
+  border-color: #e2e2e2;
+  padding: 5px;
+}
+
+.dr-badge-primary {
+  color: #1b6ec2;
+}
+
+.full-height {
+  height: 100vh;
+}
+
+///////////////////////////////////////////////////////
+//OLD
+
+/*@import "_utilities.scss";
+
+.full-height {
+  height: 100vh;
+}
+
+.content-height {
+  height: $content-height;
+}
+
+#sidebar {
+  min-width: $sidebar-width;
+  max-width: $sidebar-width;
+  background: $color-primary;
+  color: $sidebar-fgcolor;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+  position: relative;
+}
+
+#sidebar a {
+  text-decoration: none;*/
+/*transition: .2s all ease;*/
+/*font-family: $font-family;
+  font-size: $sidebar-font-size;
+  font-weight: $sidebar-font-weight;
+  color: $sidebar-fgcolor;
+}
+
+#sidebar ul li a {
+  padding: 8px 20px;
+  display: block;
+  color: $sidebar-fgcolor;
+  border-bottom: $sidebar-border;
+  position: relative;
+}
+
+#sidebar ul li a:hover {
+  color: $sidebar-fgcolor-active;
+  background: $sidebar-bgcolor-hover;
+  border-bottom: $sidebar-border;
+}
+
+#sidebar ul li.active > a {
+  background: $sidebar-bgcolor-active;
+  color: $sidebar-fgcolor-active;
+}
+
+.sidebar-logo {
+  background-color: $color-primary;
+  border-bottom: $sidebar-border;
+  height: $nav-height;
+  font-size: 20px; //temp because a logo will go here
+  font-weight: 700; //temp because a logo will go here
+  padding-top: 7px; //temp because a logo will go here
+  color: #ffffff; //temp because a logo will go here
+  padding-left: $sidebar-left-padding;*/
+/*border-bottom: $nav-border-height solid $nav-border-color;*/
+/*}
+
+.sidebar-logo img {
+  max-width: 150px !important;
+  margin: 0;
+}
+
+.sidebar-chevron {
+  position: absolute;
+  top: 8px;
+  left: 220px;
+}
+
+.sidebar-second-menu {
+  padding-left: 0px;
+}
+
+.sidebar-second-menu-active {
+  background-color: $color-secondary !important;
+  font-weight: $sidebar-font-weight-active !important;
+  color: $sidebar-fgcolor-active !important;
+}
+
+.sidebar-second-menu a {
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+  border-bottom: none !important;
+  font-size: $sidebar-font-submenu-size !important;
+  font-weight: $sidebar-font-submenu-weight !important;
+  color: $sidebar-fgcolor !important;
+}
+
+.sidebar-second-menu i {
+  width: $sidebar-icon-width !important;
+  text-align: center !important;
+  font-weight: $sidebar-icon-font-weight !important;
+}
+
+.sidebar-children {
+  -webkit-transition: all 1s linear !important;
+  -moz-transition: all 1s linear !important;
+  -o-transition: all 1s linear !important;
+  transition: all 1s linear !important;
+  display: block;
+}
+
+.sidebar-children-collapse {
+  -webkit-transition: all 1s linear !important;
+  -moz-transition: all 1s linear !important;
+  -o-transition: all 1s linear !important;
+  transition: all 1s linear !important;
+  display: none;
+}
+
+.top-bar {
+  height: $nav-height;
+  background-color: $nav-bgcolor;
+  -webkit-box-shadow: 0px 1px 3px 0px rgba(196,196,196,0.66);
+  -moz-box-shadow: 0px 1px 3px 0px rgba(196,196,196,0.66);
+  box-shadow: 0px 1px 3px 0px rgba(196,196,196,0.66);
+  color: $nav-fgcolor;
+  font-weight: $nav-text-weight;
+}
+
+.top-bar input {
+  display: block;
+  width: 100%;
+  height: 28px;
+  padding: 0.375rem 0.75rem;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.top-bar input:focus {
+  outline: none;
+}
+
+.top-bar-dropdown {
+  cursor: pointer;
+}*/
+
+
+
+
+.table-toolbar {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.table-toolbar-right td {
+  text-align: right !important;
+}
+
+
+.chart-header {
+  background-color: #fafafa;
+  padding: 5px;
+  border: solid 0.5px #e5e5e5;
+  margin-bottom: 20px;
+  margin: 0;
+}
+
+.chart-container {
+  display: block;
+  border: solid 0.5px #e5e5e5;
+}
+
+
+#login-div {
+  position: fixed;
+  /* center the div */
+  right: 0;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
+  /* give it dimensions */
+  width: 800px;
+  /* just for example presentation */
+  top: 5em;
+  background-color: $color-white;
+  padding: 2px;
+  padding: 0;
+  box-shadow: 10px 10px 10px 20px rgba(0, 0, 0, .15) !important;
+}
+
+.login-div-top {
+  //JB: AB not sure why you changed to secondary?
+  /*background-color: $color-secondary;*/
+  background-color: $color-primary;
+}
+
+.login-div-bottom {
+  background-color: $color-white;
+}
+
+.round-corners-top {
+  border-radius: 5px 5px 0px 0px;
+}
+
+.round-corners-bottom {
+  border-radius: 0px 0px 5px 5px;
+}
+
+
+.login-div-copyright {
+  background-color: $color-white;
+  color: #495057;
+}
+
+#login-div .card {
+  background-color: $color-velocity-blue;
+}
+
+.login-copyright {
+  color: $color-white;
+  padding: 8px;
+}
+
+
+
+/*=========================================
+    Slider                              
+===========================================*/
+
+#slider {
+  position: fixed;
+  /*height: calc(100vh - 60px);*/
+  height: calc(100vh);
+  right: -500px;
+  width: 500px;
+  /*top: 60px;*/
+  background-color: #fff;
+  z-index: 3;
+  transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+  align-items: stretch;
+}
+
+.slider-body {
+  width: 100%;
+  height: calc(100% - 100px);
+  overflow-y: auto;
+}
+
+.slider-footer {
+  bottom: 0;
+  height: 50px;
+  padding: 5px;
+  background-color: $off-white;
+  border-top: solid 1px $off-white-border;
+}
+
+.slider-header {
+  bottom: 0;
+  height: 50px;
+  padding: 5px;
+  background-color: $off-white;
+  border-bottom: solid 1px $off-white-border;
+}
+
+.slide-in {
+  animation: slide-in 0.2s forwards;
+  -webkit-animation: slide-in 0.2s forwards;
+  box-shadow: 0px #888 !important;
+}
+
+.slide-out {
+  animation: slide-out 0.2s forwards;
+  -webkit-animation: slide-out 0.2s forwards;
+  box-shadow: 30px 30px 30px 30px #888 !important;
+}
+
+@keyframes slide-in {
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@-webkit-keyframes slide-in {
+  100% {
+    -webkit-transform: translateX(0%);
+  }
+}
+
+@keyframes slide-out {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@-webkit-keyframes slide-out {
+  0% {
+    -webkit-transform: translateX(0%);
+  }
+
+  100% {
+    -webkit-transform: translateX(-100%);
+  }
+}
+
+
+
+//==================================================
+// Velocity Cards
+// =================================================
+.vel-card {
+  background-color: $color-white;
+  border: 1px solid $off-white;
+  border-radius: 5px;
+  width: 100%;
+  min-height: 100px;
+  /*    max-height:500px;
+    overflow-y:auto;*/
+}
+
+.card-row .col-3, .card-row .col-6, .card-row .col-2, .card-row .col-12 {
+  padding: 3px;
+}
+
+
+
+//==================================================
+// Dashboard
+// =================================================
+.dash-icon-title {
+  position: absolute;
+  text-transform: uppercase !important;
+  font-weight: 600 !important;
+  font-size: 21px !important;
+  left: 130px !important;
+  margin-top: 34px !important;
+}
+
+.dash-icon {
+  position: absolute;
+  left: 40px !important;
+  color: $color-primary !important;
+  margin-top: 15px !important;
+}
+
+.dash-dropdown {
+  position: absolute;
+  left: 130px !important;
+  width: 50% !important;
+  margin-top: 30px !important;
+}

@@ -1,0 +1,141 @@
+@import "_utilities.scss";
+
+.action-bar {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.action-bar-right {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-end;
+}
+
+.action-bar button {
+  margin-right: 5px !important;
+}
+
+.btn-reset {
+  color: $color-btn-grey;
+  background-color: #8f8f8f;
+  border-color: #8d8d8d;
+}
+
+.btn-reset:hover {
+  color: #fff;
+  text-decoration: none;
+  background-color: #9c9c9c;
+  border-color: #8f8f8f;
+}
+
+.btn-filter {
+  color: $color-btn-grey;
+  background-color: #8f8f8f;
+  border-color: #8d8d8d;
+}
+
+.btn-filter:hover {
+  color: #fff;
+  text-decoration: none;
+  background-color: #057183;
+  border-color: #8f8f8f;
+}
+
+btn btn-danger {
+  color: #fff;
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+
+.btn-danger:hover {
+  color: #fff;
+  background-color: #c82333;
+  border-color: #c82333;
+}
+
+.btn-danger:disabled {
+  color: #fff;
+  background-color: #f76977;
+  border-color: #f76977;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #057183;
+  border-color: #057183;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #057183;
+  border-color: #057183;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #18a689;
+  border-color: #18a689;
+}
+
+.btn-primary:disabled {
+  color: #fff;
+  background-color: #057183;
+  border-color: #057183;
+}
+
+.btn-default {
+  border-color: #eeeeee;
+}
+
+
+.btn-action {
+  color: $color-btn-grey;
+  background-color: $color-primary;
+  border-color: $btn-action-border;
+}
+
+.btn-action:hover {
+  color: #fff;
+  text-decoration: none;
+  background-color: $color-primary-light-1;
+  border-color: $btn-action-border;
+}
+
+.btn-output {
+  color: $color-btn-grey;
+  background-color: #44a448;
+  border-color: #44a448;
+}
+
+.btn-output:hover {
+  color: #fff;
+  background-color: #51c357;
+  border-color: #51c357;
+}
+
+.btn-back {
+  color: $color-btn-grey;
+  background-color: #122649;
+  border-color: $btn-back-border;
+}
+
+.btn-back:hover {
+  color: #fff;
+  text-decoration: none;
+  background-color: #1a3462;
+  border-color: $btn-back-border;
+}
+
+.btn-drblue {
+  background-color: $color-primary !important;
+  border-color: #192E5B;
+  color: $color-btn-grey;
+}
+
+.btn-drblue:hover {
+  color: #fff;
+  text-decoration: none;
+  background-color: #1a3462;
+  border-color: #0f213e;
+}

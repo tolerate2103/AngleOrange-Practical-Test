@@ -1,0 +1,84 @@
+
+<div class="row">
+  <div class="col-12 pl-xl-1 pr-xl-1">
+    <div class="rbox">
+      <div class="rbox-content">
+        <div class="row">
+          <div class="col-xl-12">
+            <div class="action-bar pull-left">
+              <button class="btn btn-secondary" (click)="navigateBackUrl()">
+                Back
+              </button>
+              <button type="submit" class="btn btn-primary" (click)="save()">
+                <i class="fa fa-save"></i> Save
+              </button>
+              <button type="submit" class="btn btn-danger" *ngIf="model?.BookItem.BookId">
+                <i class="fa fa-save"></i> Delete
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row mt-1">
+
+  <div class="col-lg-4 col-md-12 pl-lg-1 pr-lg-1">
+    <div class="rbox">
+      <div class="rbox-content edit-form-height">
+        <div class="row">
+          <div class="col-12">
+            <div class="rbox-title mb-2">
+              Book Details
+            </div>
+            <form #bookForm="ngForm">
+              <div class="form-row">
+                <div class="form-group col-lg-6 col-md-12">
+                  <label class="edit-label">
+                    Book Title
+                  </label>
+                  <input class="form-control form-control-sm" autocomplete="off" [(ngModel)]="model?.BookItem.Title" name="name" required minlength="2">
+                </div>
+
+                <div class="form-group col-lg-6 col-md-12">
+                  <label class="edit-label">
+                    Category
+                  </label>
+                  <input class="form-control form-control-sm" autocomplete="off" [(ngModel)]="model?.BookItem.Category" name="Surname" required>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group col-lg-6 col-md-12">
+                  <label class="edit-label">
+                    Author Name
+                  </label>
+                  <select name="author" class="form-control form-control-sm" [(ngModel)]="model?.BookItem.AuthorId">
+                    <option *ngFor="let item of model.AuthorLookup" [ngValue]="item.AuthorId"> {{item.Name + ' '+ item.Surname}}</option>
+                  </select>
+                </div>
+
+                <div class="form-group col-lg-6 col-md-12">
+                  <label class="edit-label">
+                    Price
+                  </label>
+                  <input class="form-control form-control-sm" type="number" [(ngModel)]="model?.BookItem.Price" autocomplete="off" name="price" />
+                </div>
+
+                <div class="form-group col-lg-6 col-md-12">
+
+                  <label class="cb-container ">
+                    Is Available ?
+                    <input type="checkbox" [(ngModel)]="model?.BookItem.IsAvailable" name="IsActive" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

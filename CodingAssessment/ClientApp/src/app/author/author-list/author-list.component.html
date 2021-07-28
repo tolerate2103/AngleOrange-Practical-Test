@@ -1,0 +1,83 @@
+<div class="row">
+  <div class="col-12 pl-xl-1 pr-xl-1 pb-xl-1">
+    <div class="rbox">
+      <div class="rbox-content">
+        <div class="row">
+          <div class="col-10">
+            <div class="action-bar">
+              <button class="btn btn-primary" [routerLink]='["author-edit" , "0"]'>
+                <i class="fa fa-plus"></i>
+                Create New
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-xl-12 pl-xl-1 pr-xl-1">
+
+    <div class="rbox">
+      <div class="rbox-content">
+        <div class="row">
+          <div class="col-12">
+
+            <div class="table-responsive">
+              <div class="rbox-content-height-2">
+                <table class="rs-list-table">
+                  <thead>
+                    <tr class="flex-grow-1">
+                      <th>Author Name</th>
+                      <th>Author Surname </th>
+                      <th>Created Date</th>
+                      <th>Is Enabled</th>
+                    </tr>
+                  </thead>
+                  <tbody *ngIf="IsLoading == false">
+                    <tr *ngFor="let item of model?.AuthorItems">
+                      <td>
+                        <a href="#" onclick="return false;" [routerLink]='["author-edit", item.AuthorId]'> {{item.Name}} </a>
+                      </td>
+                      <td> {{item.Surname}}</td>
+                      <td>{{item.CreatedDate | date:'yyyy MMM dd'}}</td>
+
+                      <td class="text-center">
+                        <span data-toggle="tooltip" *ngIf="item.IsActive == true" title="Active" class="cursor-pointer badge badge-success">Yes</span>
+                        <span data-toggle="tooltip" *ngIf="item.IsActive == false" title="In-Active" class="cursor-pointer badge badge-dark">No</span>
+                      </td>
+                    </tr>
+                  </tbody>
+
+                  <tbody *ngIf="IsLoading == true">
+                    <tr>
+                      <td colspan="12" class="text-center">
+                        <i class="fa fa-cog fa-spin fa-4x mt-5 mb-5 gray-forecolour"></i>
+                        <br />
+                        <h3>  Loading Author , Please wait.. </h3>
+                      </td>
+                    </tr>
+                  </tbody>
+
+                  <tbody *ngIf="IsLoading == false && model.AuthorItems == 0">
+                    <tr>
+                      <td colspan="12" class="text-center border-bottom-0">
+                        <h4 class="mt-5 mb-5">
+                          <i class="fa fa-exclamation-triangle mr-2"></i>No results found
+                        </h4>
+                      </td>
+                    </tr>
+                  </tbody>
+
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
