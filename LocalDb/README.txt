@@ -1,0 +1,1 @@
+Extract the database files from zip to this destination : /CodingAssesment/LocalDb
