@@ -124,7 +124,7 @@ namespace API.ViewModels
             }
         }
 
-        public void DeleteItem(int bookId)
+        public void DeleteRecord(int bookId)
         {
             string query = "Book_Delete";
 

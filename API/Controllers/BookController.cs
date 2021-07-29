@@ -47,6 +47,26 @@ namespace API.Controllers
         }
 
 
+
+        [Route("DeleteRecord")]
+        [HttpGet]
+        public IActionResult DeleteRecord(int id)
+        {
+            var vm = new ViewModels.BookVm();
+            try
+            {
+                vm.DeleteRecord(id);
+                return new JsonResult(vm);
+            }
+
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+
+
         [Route("PostBook")]
         [HttpPost]
         public IActionResult PostBook(ViewModels.BookVm vm)

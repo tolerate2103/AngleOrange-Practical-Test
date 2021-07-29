@@ -12,7 +12,7 @@
               <button type="submit" class="btn btn-primary" (click)="save()">
                 <i class="fa fa-save"></i> Save
               </button>
-              <button type="submit" class="btn btn-danger" *ngIf="model?.BookItem.BookId">
+              <button type="submit" class="btn btn-danger" *ngIf="model?.BookItem.BookId" (click)="DeleteRecord(model?.BookItem.BookId)">
                 <i class="fa fa-save"></i> Delete
               </button>
             </div>

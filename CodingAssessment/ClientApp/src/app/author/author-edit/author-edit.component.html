@@ -40,14 +40,14 @@
               Author Details
             </div>
 
-            <form #authorForm="ngForm">
+            <!--<form #authorForm="ngForm">-->
 
               <div class="form-row">
                 <div class="form-group col-lg-6 col-md-12">
                   <label class="edit-label">
                     Name
                   </label>
-                  <input class="form-control form-control-sm" autocomplete="off" [(ngModel)]="model?.AuthorItem.Name" name="name" required minlength="2">
+                  <input class="form-control form-control-sm" autocomplete="off" [(ngModel)]="model?.AuthorItem.Name" name="name" minlength="2" required>
                 </div>
 
 
@@ -69,7 +69,7 @@
                 </div>
 
               </div>
-            </form>
+            <!--</form>-->
           </div>
         </div>
       </div>

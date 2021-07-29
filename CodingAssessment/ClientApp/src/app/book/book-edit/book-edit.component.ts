@@ -26,7 +26,7 @@ export class BookEditComponent extends BaseComponent implements OnInit {
 
       this.model = response;
       console.log(this.model);
-     this.IsLoading = false;
+      this.IsLoading = false;
 
     },
       (error) => {
@@ -36,6 +36,28 @@ export class BookEditComponent extends BaseComponent implements OnInit {
         this.IsLoading = false;
       });
   }
+
+
+  DeleteRecord(id) {
+
+    this.IsLoading = true;
+    this.dc.get('api/Book/DeleteRecord', new HttpParams().set('id', id)).subscribe((response) => {
+
+      this.model = response;
+      console.log(this.model);
+      this.IsLoading = false;
+      this.navigateBackUrl();
+    },
+      (error) => {
+        console.error(error);
+
+        this.somethingWentWrong();
+
+        this.IsLoading = false;
+      });
+  }
+
+
 
   save() {
 
@@ -50,6 +72,7 @@ export class BookEditComponent extends BaseComponent implements OnInit {
     },
       (error) => {
         console.error(error);
+        alert(error.error + ' ' + 'Please provide author name');
         this.somethingWentWrong();
         this.IsLoading = false;
       });
